@@ -15,24 +15,38 @@
             <h1>DicoWords</h1>
             <p>Choose a word to have the definition or a synonym</p>
         </div>
-        
+
         <div id="input">
             <form id="form">
-                <input id="theWord" class="word" type="text" placeholder="write your word">
-                <button onclick="displayBtn()" role="button" type="button" id="valid" class="word">Send</button>
+                <input id="theWord" class="word" type="text" placeholder="write your word" />
+                <button role="button" type="button" id="valid" class="word">Send</button>
             </form>
         </div>
-        
+
         <div id="btn">
-            <button class="button-77" role="button">
-                <h2>Definition</h2>
-            </button>
-            <button class="button-77" role="button">
-                <h2>Synonyms</h2>
-            </button>
+            <div class="space" id="definitions">
+                <button id="defBtn" class="button-77" role="button">
+                    <h2>Definition</h2>
+                </button>
+                <div class="answers">
+                    <p id="def"></p>
+                </div>
+            </div>
+            <div class="space" id="synonyms">
+                <button id="synBtn" class="button-77" role="button">
+                    <h2>Synonyms</h2>
+                </button>
+                <div class="answers">
+                    <ul id="syn">
+                        
+                    </ul>
+
+                </div>
+            </div>
         </div>
-        
+
     </section>
+    <script src="./background.js"></script>
 </body>
-<script src="/script.js"></script>
+
 </html>
