@@ -5,6 +5,10 @@
     "name": "DicoWords",
     "version": "1.0.1",
     "description": "Permet d'avoir un dictionnaire anglais sur la page web",
+    
+    "background": {
+        "service_worker": "background.js"
+    },
 
     "action": {
         "default_popup": "index.html",
@@ -34,7 +38,7 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["background.js"]
+            "js": ["content.js"]
         }
     ]
 }

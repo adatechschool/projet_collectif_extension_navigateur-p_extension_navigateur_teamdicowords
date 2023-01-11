@@ -1,9 +1,12 @@
+
+
 body{
     margin: 5;
     background-color: #FBF9E2;
     padding: 20px 10px;
     width: 250px;
     height: 100px;
+    cursor: pointer;
 }
 
 h1 {
