@@ -8,12 +8,18 @@ body{
     cursor: pointer;
 }
 
+section {
+  padding: 15px;
+}
+
 #date {
   border: none;
   border-radius: 20px;
   background-color: #ADA7B8;
   text-align: center;
   margin-bottom: 3px;
+  font-family: Consolas;
+  color: white;
 }
 
 #time, #day {

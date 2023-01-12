@@ -31,6 +31,7 @@ function fetchImage() {
     .then(data => console.log(data))
 }
 
+
 function displayImg(result) {
     let picture = document.getElementById('image');
     picture.innerHTML = `<img src="${result.results[0].urls.thumb}"/>`
@@ -129,9 +130,8 @@ function myTime() {
     var ms = today.getMilliseconds();
     m = checkTime(m);
     s = checkTime(s);
-    ms = checkTime(ms);
     document.getElementById('time').innerHTML =
-        h + ":" + m + ":" + s + ":" + ms;
+        h + ":" + m + ":" + s;
     var t = setTimeout(myTime, 20);
 }
 function checkTime(i) {
