@@ -1,12 +1,27 @@
-
-
 body{
-    margin: 5;
+    margin: 3;
+    margin-top: 1px;
     background-color: #FBF9E2;
     padding: 20px 10px;
     width: 250px;
     height: 100px;
     cursor: pointer;
+}
+
+#date {
+  border: none;
+  border-radius: 20px;
+  background-color: #ADA7B8;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+#time, #day {
+  margin: 0;
+  margin-bottom: 5px;
+  size: 50px;
+  height: 100%;
+  font-size: 15px;
 }
 
 h1 {
@@ -25,7 +40,7 @@ h1 {
 
 #form{
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .word{
@@ -41,11 +56,14 @@ h1 {
 }
 
 #btn{
-    /* height: 70px; */
     display: none;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 15px;
+}
+
+#input {
+  margin-bottom: 5px;
 }
 
 #btn button h2{
@@ -134,7 +152,8 @@ h1 {
 
 #def {
   display: flex;
-  /* font-family: Impact; */
+  flex-direction: column;
+  margin: 5px 20px;
 }
 
 #syn{
